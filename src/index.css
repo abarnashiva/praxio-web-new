@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #106fb1;
+  --secondary: #7dbc44;
+  --banner: #333333;
+  --bluebanner:#026EAD;
+  --font-family: "Open Sans";
+}
+
+.text-fill {
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--secondary);
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+    background-color: white;
+  }
+  25% {
+    background-color: #7dbc44;
+  }
+  100% {
+    width: 100%;
+    background-color: #7dbc44;
+  }
+  110% {
+    width: 100%;
+    background-color: #7dbc44;
+  }
+}
+
+.progress-animation {
+  transition: ease-in-out;
+  animation: progressAnimation 5s linear;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  /* transform: rotate(20deg); */
+  opacity: 0;
+  transition: 0.7s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  /* transform: rotate(0deg); */
+  opacity: 1;
+}
+
+.leading-loose {
+  line-height: 2 !important;
+}
+
+.leading-relaxed {
+  line-height: 1.75 !important;
+}
+
+.olive {
+  background-color: #525E3B;
+}
+
+.royal-purple {
+  background-color: #554A76;
+}
+
+.gray {
+  background-color: #575757;
+}
+
+.slate {
+  background-color: #3B525E;
+}
+
+.dark-olive {
+  background-color: #525E3B;
+}
+
+.slate1 {
+  background-color: #4D616C;
+}
+
+.brown {
+  background: #634E3A;
+}
+
+.gray-purple {
+  background: #60515C;
+}
